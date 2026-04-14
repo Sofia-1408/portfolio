@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sofia Janik Digital Portfolio</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --accent: #1d4ed8;
+      --border: #dbe3f0;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #ffffffee;
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 14px 20px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .wrap {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 28px 20px 60px;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 34px 28px;
+      margin-top: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2.2rem;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .lead {
+      margin: 0;
+      max-width: 850px;
+    }
+
+    section {
+      margin-top: 26px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #0f172a;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .mini-card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      background: #fbfdff;
+    }
+
+    .mini-card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+
+    .btn.secondary {
+      background: white;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+
+    .project {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      margin-top: 14px;
+      background: #fbfdff;
+    }
+
+    .project h3 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+      padding: 30px 20px 12px;
+    }
+
+    @media (max-width: 760px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      h1 { font-size: 1.8rem; }
+      section, .hero { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <nav class="nav">
+      <a href="#profile">Profile</a>
+      <a href="#resume">Resume & Skills</a>
+      <a href="#work-samples">Work Samples</a>
+      <a href="#education">Education & Acknowledgements</a>
+    </nav>
+  </div>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>Sofia Janik</h1>
+      <div class="subtitle">Computer Programming and Analysis Student | Full Stack Web Development Focus</div>
+      <p class="lead">
+        Welcome to my digital portfolio. This site presents my academic background, technical skills,
+        professional experience, and selected work samples in Computer Programming and Analysis
+        with a focus on full stack web development.
+      </p>
+      <div class="button-row">
+        <a class="btn" href="#work-samples">View Work Samples</a>
+        <a class="btn secondary" href="REPLACE_WITH_GITHUB_LINK" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <section id="profile">
+      <h2>Profile</h2>
+      <p>
+        I am a motivated and detail-oriented Computer Programming and Analysis student at George Brown College
+        with a strong focus on full stack web development. My academic and professional experience includes
+        developing websites, desktop applications, and database-driven systems using technologies such as
+        C#, ASP.NET MVC, React, JavaScript, SQL, HTML, and CSS.
+      </p>
+      <p>
+        I have over two years of professional software development experience and a strong interest in building
+        modern, scalable web applications. My focus is on creating user-friendly interfaces, efficient backend systems,
+        and well-structured database integrations. I am passionate about continuously improving my technical skills and
+        applying industry best practices in software design and development.
+      </p>
+    </section>
+
+    <section id="resume">
+      <h2>Resume & Technical Skills</h2>
+      <p>
+        My resume highlights my academic background, technical skills, and professional software development experience
+        in full stack development, database systems, and web technologies.
+      </p>
+
+      <div class="button-row">
+        <a class="btn" href="REPLACE_WITH_RESUME_FILE.pdf" target="_blank">Open Resume PDF</a>
+      </div>
+
+      <div class="grid-2" style="margin-top:18px;">
+        <div class="mini-card">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>C#</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>HTML / CSS</li>
+          </ul>
+        </div>
+
+        <div class="mini-card">
+          <h3>Frameworks & Technologies</h3>
+          <ul>
+            <li>ASP.NET MVC</li>
+            <li>React</li>
+            <li>WPF</li>
+            <li>Windows Forms</li>
+          </ul>
+        </div>
+
+        <div class="mini-card">
+          <h3>Databases</h3>
+          <ul>
+            <li>Microsoft SQL Server</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+
+        <div class="mini-card">
+          <h3>Tools & Practices</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Agile / Scrum</li>
+            <li>Visual Paradigm</li>
+            <li>Full Stack Development</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="work-samples">
+      <h2>Work Samples</h2>
+      <p>
+        This section contains selected academic and technical work samples that demonstrate my skills in
+        full stack web development, database integration, and software design.
+      </p>
+
+      <div class="button-row">
+        <a class="btn" href="REPLACE_WITH_GITHUB_LINK" target="_blank">View GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Project 1 Title</h3>
+        <p><strong>Technologies:</strong> Replace with technologies used</p>
+        <p>
+          Replace this text with a short formal description of the project, what was built,
+          and which technical skills it demonstrates.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Project 2 Title</h3>
+        <p><strong>Technologies:</strong> Replace with technologies used</p>
+        <p>
+          Replace this text with a short formal description of the project, what was built,
+          and which technical skills it demonstrates.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Project 3 Title</h3>
+        <p><strong>Technologies:</strong> Replace with technologies used</p>
+        <p>
+          Replace this text with a short formal description of the project, what was built,
+          and which technical skills it demonstrates.
+        </p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education & Acknowledgements</h2>
+
+      <div class="mini-card">
+        <h3>Education</h3>
+        <p>
+          <strong>Advanced College Diploma</strong><br>
+          Computer Programming and Analysis<br>
+          George Brown College, Toronto, ON<br>
+          2025–2027
+        </p>
+      </div>
+
+      <div class="mini-card" style="margin-top:14px;">
+        <h3>Academic Recognition</h3>
+        <ul>
+          <li>Dean’s List across all completed semesters</li>
+        </ul>
+      </div>
+
+      <div class="mini-card" style="margin-top:14px;">
+        <h3>Certificate</h3>
+        <p>Microsoft Development Program Certificate (2019–2020)</p>
+        <div class="button-row">
+          <a class="btn secondary" href="REPLACE_WITH_CERTIFICATE_FILE.pdf" target="_blank">Open Certificate</a>
+        </div>
+      </div>
+
+      <div class="mini-card" style="margin-top:14px;">
+        <h3>Relevant Coursework</h3>
+        <ul>
+          <li>Software Development</li>
+          <li>Web Applications</li>
+          <li>Database Systems</li>
+          <li>Object-Oriented Programming</li>
+        </ul>
+      </div>
+
+      <p class="note" style="margin-top:16px;">
+        Add transcripts, awards, or recommendation letters here later if you decide to include them.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Digital Portfolio - Sofia Janik
+  </footer>
+</body>
+</html>
